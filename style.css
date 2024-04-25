@@ -1,0 +1,70 @@
+body
+{
+    background-image: radial-gradient(circle, green, yellow, purple);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_div
+{
+    text-align: center; 
+    color: #282828;
+    width: 100%;
+    height: 100%;
+}
+
+input.controls_div
+{
+    text-align: center;
+    color: #fdfdfe;
+    background-color: black;
+    font-size: 22px;
+    margin-top: 2px;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+
+h1.main_div
+{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+}
+
+#humpty_dumpty
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 250px;
+}
+
+
+@keyframes spinning {
+    0% {transform: rotate(360deg);}
+    50% {left:0%; top:50%;}
+    100% {left:0%; top:0%}
+  }
+
+@keyframes invert_colors {
+    0% {filter: invert(0%);}
+    50% {filter: invert(100%);}
+    100% {filter: invert(0%);}
+}
+
+
+@keyframes random_colors {
+    0% {filter: hue-rotate(90deg)}
+    25% {filter: hue-rotate(210deg)}
+    50% {filter: hue-rotate(330deg)}
+    75% {filter: hue-rotate(210deg)}
+    100% {filter: hue-rotate(90deg)}
+}
