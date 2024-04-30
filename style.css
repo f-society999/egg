@@ -11,23 +11,6 @@ body
 {
     text-align: center; 
     color: #282828;
-    width: 100%;
-    height: 100%;
-}
-
-input.controls_div
-{
-    text-align: center;
-    color: #fdfdfe;
-    background-color: black;
-    font-size: 100px;
-    margin-top: 10px;
-    margin-right: 35px;
-    margin-left: 35px;
-    padding: 12px;
-    padding-left: 35px;
-    padding-right: 35px;
-    border-radius: 12px;
 }
 
 h1.main_div
@@ -41,12 +24,28 @@ h1.main_div
 #humpty_dumpty
 {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
     width: 400px;
-    height: 720px;
+    height: 250px;
+    animation-name: spinning;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
+#illuminati_eye
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100px;
+    height: 100px;
+    animation-name: invert_colors;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
 
 @keyframes spinning {
     0% {transform: rotate(360deg);}
